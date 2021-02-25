@@ -7,7 +7,7 @@ St.Petersburg, Kudrovo
 #### e-mail:
 loki87.666@gmail.com
 #### Github:
-![https://github.com/loki87by](https://github.com/loki87by)
+[https://github.com/loki87by](https://github.com/loki87by)
 ## Purpose:
 Level up by Linus Torvalds, Bill Gates, Steve Jobs, Pavel Durov, Satoshi Nakamoto or something like that.
 Contribute to IT new story of getting rich.
