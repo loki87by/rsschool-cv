@@ -19,7 +19,10 @@ header {
   background-color: #000;
 }
 
-main { max-width: 1280px; }
+main { 
+  max-width: 1280px;
+  margin: auto;
+}
 
 .avatar{
   max-width: 68vw;
