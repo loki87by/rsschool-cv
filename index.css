@@ -32,7 +32,12 @@ main { max-width: 1280px; }
 
 h3 { font-weight: bold; }
 
-span { font-style: italic; }
+h5 { margin: 0; }
+
+mark {
+  font-style: italic;
+  background-color: inherit
+ }
 
 li {
   font-style: italic;
@@ -49,11 +54,13 @@ a:hover { opacity: .8; }
 footer {
   height: 50px;
   padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
   color: #fff;
   background-color: #000;
 }
 
 .footer-image{
   filter: invert(100%);
-  max-height: 3vw;
+  height: 3vw;
 }
