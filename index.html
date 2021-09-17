@@ -11,10 +11,22 @@
 <body>
   <header>
     <h1>Alexey Akulich</h1>
+    <button class="menu"></button>
+    <nav>
+      <ul>
+        <li><a class="nav-link" href="#contacts">Contacts</a></li>
+        <li><a class="nav-link" href="#purpose">Purpose</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#example">Example</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#english">English</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <img class="avatar" src="/assets/avatar.jpg" alt="avatar" />
-    <h2>Contacts:</h2>
+    <h2 class="anchor" id="contacts">Contacts:</h2>
     <h4>City:
       <mark> St.Petersburg, Kudrovo</mark>
     </h4>
@@ -26,10 +38,10 @@
     </h4>
     <p>Github: </p>
     <a href="https://github.com/loki87by">https://github.com/loki87by</a>
-    <h2>Purpose:</h2>
+    <h2 class="anchor" id="purpose">Purpose:</h2>
     <h3>Level up by Linus Torvalds, Bill Gates, Steve Jobs, Pavel Durov, Satoshi Nakamoto or something like that.
         Contribute to IT new story of getting rich.</h3>
-    <h2>Skills:</h2>
+    <h2 class="anchor" id="skills">Skills:</h2>
     <h3>Knowledge programming languages:</h3>
     <ul>
       <li><div><img src="./assets/js.svg" alt="JavaScript"><h4>JavaScript</h4></div></li>
@@ -71,7 +83,7 @@
     </ul>
     <h3>Knowledge of the basics of manual and automated testing.</h3>
     <h3>Bash basics.</h3>
-    <h2>Sample code:</h2>
+    <h2 class="anchor" id="example">Sample code:</h2>
     <h5>function greeting(){<br>
       console.log('hello world');<br>
     }<br>
@@ -81,8 +93,8 @@
       clearTimeout(timer);<br>
       greeting()<br>
     }</h5>
-    <h2>My projects:</h2>
-    <ul>
+    <h2 id="projects" class="anchor">My projects:</h2>
+    <ul id="works">
       <li><a href="https://github.com/loki87by/how-to-learn">only HTML & CSS project</a></li>
       <li><a href="https://github.com/loki87by/russian-travel">only HTML & CSS project with adaptive</a></li>
       <li><a href="https://github.com/loki87by/mesto">HTML, CSS and NativeJS project</a></li>
@@ -98,17 +110,17 @@
       <li><a href="https://github.com/loki87by/gallery-angular">Previous project with same chancges writing with angular</a></li>
       <li><a href="https://github.com/loki87by/match-match-game">web game application</a></li>
       <li><a href="https://github.com/loki87by/online-zoo">HTML, CSS and NativeJS project</a></li>
-      <li><a href="https://github.com/loki87by/my-weather-widget">integrated widget writing with react</a></li>
+      <li><a href="https://github.com/loki87by/my-weather-widget">Integrated widget writing with react</a></li>
       <li><a href="https://github.com/loki87by/portfolio">My portfolio</a></li>
     </ul>
-    <h2>Education:</h2>
+    <h2 class="anchor" id="education">Education:</h2>
     <h4>Incomplete higher education teacher of mathematics and computer science.<br>
       Web Development Training Course</h4>
-    <h2>Knowledge of English:</h2>
+    <h2 class="anchor" id="english">Knowledge of English:</h2>
     <h4>A2 level</h4>
   </main>
   <footer>
-    <h5>&copy; <time>2021</time>  <a href="https://rs.school/js/"><img class="footer-image" src="gitlogo.png" alt="logo" /></a></h5>
+    <h5>&copy; <time>2021</time>  <a href="https://github.com/loki87by"><img class="footer-image" src="gitlogo.png" alt="logo" /></a></h5>
     <a href="https://rs.school/js/"><img class="footer-image" src="/assets/rs_school_js.svg" alt="logo" /></a>
   </footer>
   <script src='/script.js'></script>

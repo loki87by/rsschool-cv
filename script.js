@@ -1,6 +1,6 @@
+const navigation = document.querySelector('nav')
 const avatar = document.querySelector('.avatar')
 const code = document.querySelector('h5')
-console.log(code)
 
 const rand = () => {
   return Math.floor(Math.random() * 4)
@@ -39,3 +39,12 @@ setInterval(() => {
 
 avatar.addEventListener('mouseover', changeAvatar)
 avatar.addEventListener('mouseout', resetAnimation)
+navigation.children[0].addEventListener('click', (e) => {
+  const text = e.target.textContent.toLowerCase()
+  const target = document.getElementById(text)
+  target.setAttribute('style', 'background-color: yellow')
+  setTimeout(() => {
+    target.removeAttribute('style')
+  }, 3000);
+  console.log(target)
+})
