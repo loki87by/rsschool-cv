@@ -9,7 +9,7 @@ body {
   line-height: 1.25;
   color: #000;
   text-align: center;
-  background-color: #fff;
+  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(0,212,255,1) 90%, rgba(9,9,121,1) 100%);
 }
 
 header {
@@ -66,9 +66,9 @@ h3 {
   font-weight: bold;
 }
 
-h5 {
+h5,
+h6 {
   margin: 0;
-  transition: text-shadow 0.5 linear;
 }
 
 mark {
@@ -86,12 +86,36 @@ ul {
   justify-content: space-around;
 }
 
+.javascript {
+  text-align-last: left;
+  margin: auto;
+  width: max-content;
+  background: none;
+}
+
 #works {
   display: block;
   column-count: 3;
 }
 
+#works li {
+  break-inside: avoid-column;
+}
+
+.work > img {
+  width: 30%;
+  cursor: pointer;
+}
+
+iframe {
+  width: 64vw;
+  height: 36vw;
+  box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
 .anchor {
+  width: max-content;
+    margin: auto;
   padding-top: calc(2rem + 2.67em - 4vmin);
   margin-top: calc(-2rem - 2.67em + 4vmin);
   background-clip: content-box;

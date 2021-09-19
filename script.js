@@ -1,6 +1,5 @@
 const navigation = document.querySelector('nav')
 const avatar = document.querySelector('.avatar')
-const code = document.querySelector('h5')
 const menu = document.querySelector('.menu')
 const nav = document.querySelector('nav')
 
@@ -49,16 +48,12 @@ function openMenu() {
   menu.addEventListener('click', closeMenu)
 }
 
-setInterval(() => {
-  code.setAttribute('style', `text-shadow: ${rand()}px ${rand()}px ${rand()}px ${shadowColor()}`)
-}, 2500);
-
 avatar.addEventListener('mouseover', changeAvatar)
 avatar.addEventListener('mouseout', resetAnimation)
 navigation.children[0].addEventListener('click', (e) => {
   const text = e.target.textContent.toLowerCase()
   const target = document.getElementById(text)
-  console.log(target.style)
+  console.log(target)
   target.setAttribute('style', 'background-color: yellow')
   setTimeout(() => {
     target.removeAttribute('style')
