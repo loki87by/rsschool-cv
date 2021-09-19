@@ -1,7 +1,6 @@
 const navigation = document.querySelector('nav')
 const avatar = document.querySelector('.avatar')
 const menu = document.querySelector('.menu')
-const nav = document.querySelector('nav')
 
 const rand = () => {
   return Math.floor(Math.random() * 4)
@@ -35,14 +34,14 @@ function resetAnimation() {
 }
 
 function closeMenu() {
-  nav.classList.remove('asyde')
+  navigation.classList.remove('asyde')
   menu.removeAttribute('style')
   menu.addEventListener('click', openMenu)
   menu.removeEventListener('click', closeMenu)
 }
 
 function openMenu() {
-  nav.classList.add('asyde')
+  navigation.classList.add('asyde')
   menu.setAttribute('style', 'background-image: url("./assets/close.svg")')
   menu.removeEventListener('click', openMenu)
   menu.addEventListener('click', closeMenu)
