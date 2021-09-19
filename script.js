@@ -1,12 +1,10 @@
-const navigation = document.querySelector('nav')
+const navigation = document.querySelector('.navigation')
 const avatar = document.querySelector('.avatar')
 const menu = document.querySelector('.menu')
 
 const rand = () => {
   return Math.floor(Math.random() * 4)
 }
-
-const shadowColor = () => {return '#' + (Math.random().toString(16) + '000000').substring(2,8)}
 
 const animations = [
   './assets/cinema.gif',
@@ -30,7 +28,7 @@ function changeAvatar() {
 }
 
 function resetAnimation() {
-  avatar.src = '/assets/avatar.jpg'
+  avatar.src = './assets/avatar.jpg'
 }
 
 function closeMenu() {
