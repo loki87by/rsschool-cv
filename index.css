@@ -30,19 +30,19 @@ h1 {
 
 .menu {
   position: absolute;
-    top: calc((2.7em - 3vmax) / 2);;
-    right: calc((2.7em - 3vmax) / 2);;
-    width: 3vmax;
-    height: 3vmax;
-    border: none;
-    background-image: url('./assets/hamburger.svg');
-    background-size: cover;
-    background-color: transparent;
-    visibility: hidden;
+  top: calc((2.7em - 3vmax) / 2);
+  right: calc((2.7em - 3vmax) / 2);
+  width: 3vmax;
+  height: 3vmax;
+  border: none;
+  background-image: url("./assets/hamburger.svg");
+  background-size: cover;
+  background-color: transparent;
+  visibility: hidden;
 }
 
 .nav-link {
-  color:white;
+  color: white;
 }
 
 main {
@@ -94,6 +94,7 @@ ul {
 .anchor {
   padding-top: calc(2rem + 2.67em - 4vmin);
   margin-top: calc(-2rem - 2.67em + 4vmin);
+  background-clip: content-box;
 }
 
 li {
@@ -124,14 +125,15 @@ li > div > h4 {
   height: max-content;
 }
 
-a {
+a,
+button {
   cursor: pointer;
   text-decoration: none;
 }
 
 a:hover {
   opacity: 0.8;
-  color:darkorange;
+  color: darkorange;
 }
 
 footer {
@@ -150,6 +152,23 @@ footer {
   height: 3vw;
 }
 
+.asyde {
+  position: fixed;
+  top: calc(2.67em - 3px);
+  right: 0;
+  width: max-content;
+  height: max-content;
+  display: block;
+  background-color: #000;
+}
+
+.asyde > ul {
+  width: max-content;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 999px) {
   #works {
     column-count: 2;
@@ -164,6 +183,15 @@ footer {
   nav {
     display: none;
   }
+
+  .avatar {
+    margin-top: 2rem;
+  }
+
+  /* .anchor {
+    padding-top: calc(2rem - 4vmin);
+    margin-top: calc(-2rem + 4vmin);
+  } */
 }
 
 @media (max-width: 400px) {
