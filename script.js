@@ -9,10 +9,10 @@ const rand = () => {
 const shadowColor = () => {return '#' + (Math.random().toString(16) + '000000').substring(2,8)}
 
 const animations = [
-  '/assets/cinema.gif',
-  '/assets/glitch.gif',
-  '/assets/glitch2.gif',
-  '/assets/matrix.gif',
+  './assets/cinema.gif',
+  './assets/glitch.gif',
+  './assets/glitch2.gif',
+  './assets/matrix.gif',
 ]
 
 let imagesArray = []
