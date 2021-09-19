@@ -1,7 +1,15 @@
 const navigation = document.querySelector('.navigation')
 const avatar = document.querySelector('.avatar')
 const menu = document.querySelector('.menu')
+const code = document.querySelector('.javascript')
 
+
+if(window.innerWidth < 600){
+  const codeAttributes = document.querySelector('.hljs-number')
+  const br = document.createElement('br')
+  code.insertBefore(br, codeAttributes)
+
+}
 const rand = () => {
   return Math.floor(Math.random() * 4)
 }
