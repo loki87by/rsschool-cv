@@ -19,7 +19,7 @@ let imagesArray = []
 
 for (let i = 0; i < animations.length; i++) {
   let img = new Image();
-  img.src = animations[i];
+  img.src = `${window.location.href}${animations[i]}`;
   img.onload = function () {
     imagesArray.push(img.src);
   };
