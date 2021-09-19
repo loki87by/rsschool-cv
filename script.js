@@ -50,7 +50,6 @@ avatar.addEventListener('mouseout', resetAnimation)
 navigation.children[0].addEventListener('click', (e) => {
   const text = e.target.textContent.toLowerCase()
   const target = document.getElementById(text)
-  console.log(target)
   target.setAttribute('style', 'background-color: yellow')
   setTimeout(() => {
     target.removeAttribute('style')
