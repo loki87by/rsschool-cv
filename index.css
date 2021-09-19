@@ -212,10 +212,10 @@ footer {
     margin-top: 2rem;
   }
 
-  /* .anchor {
-    padding-top: calc(2rem - 4vmin);
-    margin-top: calc(-2rem + 4vmin);
-  } */
+  .anchor {
+    padding-top: calc(2.67em - 4vmin);
+    margin-top: calc(-2.67em + 4vmin);
+  }
 }
 
 @media (max-width: 400px) {
