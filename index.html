@@ -1,94 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="index.css">
-  <meta name="author" content="Alexey Akulich">
-  <title>CV</title>
-</head>
-<body>
-  <header>
-    <h1>Alexey Akulich</h1>
-    <button class="menu"></button>
-    <nav class="navigation">
-      <ul>
-        <li><a class="nav-link" href="#contacts">Contacts</a></li>
-        <li><a class="nav-link" href="#purpose">Purpose</a></li>
-        <li><a class="nav-link" href="#skills">Skills</a></li>
-        <li><a class="nav-link" href="#example">Example</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#education">Education</a></li>
-        <li><a class="nav-link" href="#english">English</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="author" content="Alexey Akulich" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <h1>Alexey Akulich</h1>
+      <button class="menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a class="nav-link" href="#contacts">Contacts</a></li>
+          <li><a class="nav-link" href="#purpose">Purpose</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#example">Example</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#english">English</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img class="avatar" src="./assets/avatar.jpg" alt="avatar" />
+      <h2 class="anchor" id="contacts">Contacts:</h2>
+      <ul class="contacts">
+        <li class="contacts-item">
+          <h4>
+            City:
+            <mark> St.Petersburg, Kudrovo</mark>
+          </h4>
+        </li>
+        <li class="contacts-item">
+          <h4>
+            Phone:
+            <mark> +7(995)593-57-56</mark>
+          </h4>
+        </li>
+        <li class="contacts-item">
+          <h4>
+            e-mail:
+            <mark> loki87.666@gmail.com</mark>
+          </h4>
+        </li>
+        <li class="contacts-item">
+          <h4>Github: &nbsp;</h4>
+          <a href="https://github.com/loki87by">https://github.com/loki87by</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <img class="avatar" src="./assets/avatar.jpg" alt="avatar" />
-    <h2 class="anchor" id="contacts">Contacts:</h2>
-    <h4>City:
-      <mark> St.Petersburg, Kudrovo</mark>
-    </h4>
-    <h4>Phone:
-      <mark> +7(995)593-57-56</mark>
-    </h4>
-    <h4>e-mail:
-      <mark> loki87.666@gmail.com</mark>
-    </h4>
-    <p>Github: </p>
-    <a href="https://github.com/loki87by">https://github.com/loki87by</a>
-    <h2 class="anchor" id="purpose">Purpose:</h2>
-    <h3>Level up by Linus Torvalds, Bill Gates, Steve Jobs, Pavel Durov, Satoshi Nakamoto or something like that.
-        Contribute to IT new story of getting rich.</h3>
-    <h2 class="anchor" id="skills">Skills:</h2>
-    <h3>Knowledge programming languages:</h3>
-    <ul>
-      <li><div><img src="./assets/js.svg" alt="JavaScript"><h4>JavaScript</h4></div></li>
-      <li><div><img src="./assets/type_typescript.svg" alt="Typescript"><h4>Typescript</h4></div></li>
-      <li><div><img src="./assets/html.svg" alt="Html"><h4>Html</h4></div></li>
-      <li><div><img src="./assets/css.svg" alt="Css"><h4>Css</h4></div></li>
-      <li><div><img src="./assets/markdown.svg" alt="Markdown"><h4>Markdown</h4></div></li>
-      <li><div><img src="./assets/python.svg" alt="Python"><h4>Python</h4></div></li>
-    </ul>
-    <h3>Working with frameworks:</h3>
-    <ul>
-      <li><div><img src="./assets/react.svg" alt="React"><h4>React</h4></div></li>
-      <li><div><img src="./assets/angular.svg" alt="Angular"><h4>Angular</h4></div></li>
-      <li><div><img src="./assets/vue.svg" alt="Vue"><h4>Vue</h4></div></li>
-      <li><div><img src="./assets/django.svg" alt="Django"><h4>Django</h4></div></li>
-    </ul>
-    <h3>Other:</h3>
-    <ul>
-      <li><div><img src="./assets/git.svg" alt="Git"><h4>Git</h4></div></li>
-      <li><div><img src="./assets/webpack.svg" alt="Webpack"><h4>Webpack</h4></div></li>
-      <li><div><img src="./assets/mongo.svg" alt="Mongo"><h4>Mongo</h4></div></li>
-    </ul>
-    <h3>Understanding of OOP.</h3>
-    <h3>Knowledge of BEM.</h3>
-    <h3>Working with the layout:</h3>
-    <ul>
-      <li><div><img src="./assets/figma.svg" alt="Figma"><h4>Figma</h4></div></li>
-      <li><div><img src="./assets/photoshop.svg" alt="Photoshop"><h4>Photoshop</h4></div></li>
-    </ul>
-    <h3>Working with databases:</h3>
-    <ul>
-      <li>SQL,</li>
-      <li>NoSql.</li>
-    </ul>
-    <h3>Ability to work with API requests:</h3>
-    <ul>
-      <li>Postman,</li>
-      <li>Charles.</li>
-    </ul>
-    <h3>Knowledge of the basics of manual and automated testing.</h3>
-    <h3>Bash basics.</h3>
-    <h2 class="anchor" id="example">Sample code:</h2>
-    <pre><code class="javascript">function greeting(){
+      <h2 class="anchor" id="purpose">Purpose:</h2>
+      <h3>
+        Level up by Linus Torvalds, Bill Gates, Steve Jobs, Pavel Durov, Satoshi
+        Nakamoto or something like that. Contribute to IT new story of getting
+        rich.
+      </h3>
+      <h2 class="anchor" id="skills">Skills:</h2>
+      <h3>Knowledge programming languages:</h3>
+      <ul>
+        <li>
+          <div>
+            <img src="./assets/js.svg" alt="JavaScript" />
+            <h4>JavaScript</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/type_typescript.svg" alt="Typescript" />
+            <h4>Typescript</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/html.svg" alt="Html" />
+            <h4>Html</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/css.svg" alt="Css" />
+            <h4>Css</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/markdown.svg" alt="Markdown" />
+            <h4>Markdown</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/python.svg" alt="Python" />
+            <h4>Python</h4>
+          </div>
+        </li>
+      </ul>
+      <h3>Working with frameworks:</h3>
+      <ul>
+        <li>
+          <div>
+            <img src="./assets/react.svg" alt="React" />
+            <h4>React</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/angular.svg" alt="Angular" />
+            <h4>Angular</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/vue.svg" alt="Vue" />
+            <h4>Vue</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/django.svg" alt="Django" />
+            <h4>Django</h4>
+          </div>
+        </li>
+      </ul>
+      <h3>Other:</h3>
+      <ul>
+        <li>
+          <div>
+            <img src="./assets/git.svg" alt="Git" />
+            <h4>Git</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/webpack.svg" alt="Webpack" />
+            <h4>Webpack</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/mongo.svg" alt="Mongo" />
+            <h4>Mongo</h4>
+          </div>
+        </li>
+      </ul>
+      <h3>Understanding of OOP.</h3>
+      <h3>Knowledge of BEM.</h3>
+      <h3>Working with the layout:</h3>
+      <ul>
+        <li>
+          <div>
+            <img src="./assets/figma.svg" alt="Figma" />
+            <h4>Figma</h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./assets/photoshop.svg" alt="Photoshop" />
+            <h4>Photoshop</h4>
+          </div>
+        </li>
+      </ul>
+      <h3>Working with databases:</h3>
+      <ul>
+        <li>SQL,</li>
+        <li>NoSql.</li>
+      </ul>
+      <h3>Ability to work with API requests:</h3>
+      <ul>
+        <li>Postman,</li>
+        <li>Charles.</li>
+      </ul>
+      <h3>Knowledge of the basics of manual and automated testing.</h3>
+      <h3>Bash basics.</h3>
+      <h2 class="anchor" id="example">Sample code:</h2>
+      <pre><code class="javascript">function greeting(){
       console.log('hello world');
     }
     if(worldSleeps){
@@ -97,36 +193,199 @@
       clearTimeout(timer);
       greeting()
     }</code></pre>
-    <h2 id="projects" class="anchor">My projects:</h2>
-    <ul id="works">
-      <li><a href="https://github.com/loki87by/how-to-learn" class="work" target="blank"><img src="https://loki87by.github.io/how-to-learn/images/two_again.png" alt="only HTML & CSS project" /></a><h6>only HTML & CSS project</h6></li>
-      <li><a href="https://github.com/loki87by/mesto" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-2.0d5c551e.jpg" alt="HTML, CSS and NativeJS project" /></a><h6>HTML, CSS and NativeJS project</h6></li>
-      <li><a href="https://github.com/loki87by/mesto-react" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-3.662e4a30.jpg" alt="The same project with ReactJS" /></a><h6>The same project with ReactJS</h6></li>
-      <li><a href="https://github.com/loki87by/react-mesto-auth" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-4.0d5c551e.jpg" alt="The same project with authentification" /></a><h6>The same project with authentification</h6></li>
-      <li><a href="https://github.com/loki87by/express-mesto" target="blank" class="work"><img src="https://lh6.googleusercontent.com/WCP7IkIQUcRqC3dYPUDJt0qHaNToGrBTLK5-F_ki-wsG19uRA8lbC4Nr7jcdJJsdQj1wfpM7dksiy6AM18-Qhjo0r9QFccNpScbBxDNPhVJeMkfD_8ydUgehqzimGhF0sBZvLgwJ" alt="Backend to previos project" /></a><h6>Backend to previos project</h6></li>
-      <li><a href="https://github.com/loki87by/news-explorer-frontend" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-6.eef8e9bb.jpg" alt="Project interacting with two APIs" /></a><h6>Project interacting with two APIs</h6></li>
-      <li><a href="https://github.com/loki87by/news-explorer-api" target="blank" class="work"><img src="https://lh6.googleusercontent.com/WCP7IkIQUcRqC3dYPUDJt0qHaNToGrBTLK5-F_ki-wsG19uRA8lbC4Nr7jcdJJsdQj1wfpM7dksiy6AM18-Qhjo0r9QFccNpScbBxDNPhVJeMkfD_8ydUgehqzimGhF0sBZvLgwJ" alt="Backend to previos project" /></a><h6>Backend to previos project</h6></li>
-      <li><a href="https://github.com/loki87by/wildlife" target="blank" class="work"><img src="https://loki87by.github.io/wildlife/assets/fox.jpg" alt="only HTML & CSS project" /></a><h6>only HTML & CSS project</h6></li>
-      <li><a href="https://github.com/loki87by/virtual-piano" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-9.01734e63.jpg" alt="Music web application" /></a><h6>Music web application</h6></li>
-      <li><a href="https://github.com/loki87by/photo-filter" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-10.d3c82603.jpg" alt="Web photo editor" /></a><h6>Web photo editor</h6></li>
-      <li><a href="https://github.com/loki87by/gallery" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-13.71d1b5b4.jpg" alt="HTML, CSS and NativeJS project" /></a><h6>HTML, CSS and NativeJS project</h6></li>
-      <li><a href="https://github.com/loki87by/gallery-angular" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-14.18cee74e.jpg" alt="Previous project with same chancges writing with angular" /></a><h6>Previous project with same chancges writing with Angular</h6></li>
-      <li><a href="https://github.com/loki87by/match-match-game" target="blank" class="work"><img src="https://loki87by.github.io/portfolio/static/media/project-11.6be6e520.jpg" alt="web game application" /></a><h6>web game application</h6></li>
-      <li><a href="https://github.com/loki87by/online-zoo" target="blank" class="work"><img src="https://loki87by.github.io/online-zoo/assets/images/Background.jpg" alt="HTML, CSS and NativeJS project" /></a><h6><h6>HTML, CSS and NativeJS project</h6></h6></li>
-      <li><a href="https://github.com/loki87by/portfolio" target="blank" class="work"><img src="./assets/portfolio-screen.jpg" alt="My portfolio" /></a><h6>My portfolio writing with ReactJs</h6></li>
-    </ul>
-    <h2 class="anchor" id="introduction">Introduction:</h2>
-    <iframe src="https://www.youtube.com/embed/B6HEqgu7E2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2 class="anchor" id="education">Education:</h2>
-    <h4>Incomplete higher education teacher of mathematics and computer science.<br>
-      Web Development Training Course</h4>
-    <h2 class="anchor" id="english">Knowledge of English:</h2>
-    <h4>A2 level</h4>
-  </main>
-  <footer>
-    <h5>&copy; <time>2021</time>  <a href="https://github.com/loki87by" target="blank"><img class="footer-image" src="gitlogo.png" alt="logo" /></a></h5>
-    <a href="https://rs.school/js/" target="blank"><img class="footer-image" src="./assets/rs_school_js.svg" alt="logo" /></a>
-  </footer>
-  <script src='./script.js'></script>
-</body>
+      <h2 id="projects" class="anchor">My projects:</h2>
+      <ul id="works">
+        <li>
+          <a
+            href="https://github.com/loki87by/how-to-learn"
+            class="work"
+            target="blank"
+            ><img
+              src="https://loki87by.github.io/how-to-learn/images/two_again.png"
+              alt="only HTML & CSS project"
+          /></a>
+          <h6>only HTML & CSS project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/mesto"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-2.0d5c551e.jpg"
+              alt="HTML, CSS and NativeJS project"
+          /></a>
+          <h6>HTML, CSS and NativeJS project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/mesto-react"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-3.662e4a30.jpg"
+              alt="The same project with ReactJS"
+          /></a>
+          <h6>The same project with ReactJS</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/react-mesto-auth"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-4.0d5c551e.jpg"
+              alt="The same project with authentification"
+          /></a>
+          <h6>The same project with authentification</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/express-mesto"
+            target="blank"
+            class="work"
+            ><img
+              src="https://lh6.googleusercontent.com/WCP7IkIQUcRqC3dYPUDJt0qHaNToGrBTLK5-F_ki-wsG19uRA8lbC4Nr7jcdJJsdQj1wfpM7dksiy6AM18-Qhjo0r9QFccNpScbBxDNPhVJeMkfD_8ydUgehqzimGhF0sBZvLgwJ"
+              alt="Backend to previos project"
+          /></a>
+          <h6>Backend to previos project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/news-explorer-frontend"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-6.eef8e9bb.jpg"
+              alt="Project interacting with two APIs"
+          /></a>
+          <h6>Project interacting with two APIs</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/news-explorer-api"
+            target="blank"
+            class="work"
+            ><img
+              src="https://lh6.googleusercontent.com/WCP7IkIQUcRqC3dYPUDJt0qHaNToGrBTLK5-F_ki-wsG19uRA8lbC4Nr7jcdJJsdQj1wfpM7dksiy6AM18-Qhjo0r9QFccNpScbBxDNPhVJeMkfD_8ydUgehqzimGhF0sBZvLgwJ"
+              alt="Backend to previos project"
+          /></a>
+          <h6>Backend to previos project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/wildlife"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/wildlife/assets/fox.jpg"
+              alt="only HTML & CSS project"
+          /></a>
+          <h6>only HTML & CSS project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/virtual-piano"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-9.01734e63.jpg"
+              alt="Music web application"
+          /></a>
+          <h6>Music web application</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/photo-filter"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-10.d3c82603.jpg"
+              alt="Web photo editor"
+          /></a>
+          <h6>Web photo editor</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/gallery"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-13.71d1b5b4.jpg"
+              alt="HTML, CSS and NativeJS project"
+          /></a>
+          <h6>HTML, CSS and NativeJS project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/gallery-angular"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-14.18cee74e.jpg"
+              alt="Previous project with same chancges writing with angular"
+          /></a>
+          <h6>Previous project with same chancges writing with Angular</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/match-match-game"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/portfolio/static/media/project-11.6be6e520.jpg"
+              alt="web game application"
+          /></a>
+          <h6>web game application</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/online-zoo"
+            target="blank"
+            class="work"
+            ><img
+              src="https://loki87by.github.io/online-zoo/assets/images/Background.jpg"
+              alt="HTML, CSS and NativeJS project"
+          /></a>
+          <h6>HTML, CSS and NativeJS project</h6>
+        </li>
+        <li>
+          <a
+            href="https://github.com/loki87by/portfolio"
+            target="blank"
+            class="work"
+            ><img src="./assets/portfolio-screen.jpg" alt="My portfolio"
+          /></a>
+          <h6>My portfolio writing with ReactJs</h6>
+        </li>
+      </ul>
+      <h2 class="anchor" id="introduction">Introduction:</h2>
+      <iframe
+        src="https://www.youtube.com/embed/B6HEqgu7E2A"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <h2 class="anchor" id="education">Education:</h2>
+      <h4>
+        Incomplete higher education teacher of mathematics and computer
+        science.<br />
+        Web Development Training Course
+      </h4>
+      <h2 class="anchor" id="english">Knowledge of English:</h2>
+      <h4>A2 level</h4>
+    </main>
+    <footer>
+      <h5>
+        &copy; <time>2021</time>
+        <a href="https://github.com/loki87by" target="blank"
+          ><img class="footer-image" src="gitlogo.png" alt="logo"
+        /></a>
+      </h5>
+      <a href="https://rs.school/js/" target="blank"
+        ><img class="footer-image" src="./assets/rs_school_js.svg" alt="logo"
+      /></a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   width: 100vw;
@@ -9,13 +13,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.25;
   color: #000;
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: center;
-  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(0,212,255,1) 90%, rgba(9,9,121,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(0, 212, 255, 1) 90%,
+    rgba(9, 9, 121, 1) 100%
+  );
 }
 
 header {
   position: fixed;
+  left: 0;
   width: 100%;
   border-bottom: 3px solid #888;
   color: #fff;
@@ -23,6 +36,10 @@ header {
 }
 
 nav {
+  display: none;
+}
+
+.navigation {
   height: 2rem;
 }
 
@@ -40,7 +57,6 @@ h1 {
   background-image: url("./assets/hamburger.svg");
   background-size: cover;
   background-color: transparent;
-  visibility: hidden;
 }
 
 .nav-link {
@@ -90,6 +106,16 @@ ul {
   justify-content: space-around;
 }
 
+.contacts {
+  flex-direction: column;
+}
+
+.contacts-item {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 .javascript {
   text-align-last: left;
   margin: auto;
@@ -114,12 +140,12 @@ ul {
 iframe {
   width: 64vw;
   height: 36vw;
-  box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
 }
 
 .anchor {
   width: max-content;
-    margin: auto;
+  margin: auto;
   padding-top: calc(2rem + 2.67em - 4vmin);
   margin-top: calc(-2rem - 2.67em + 4vmin);
   background-clip: content-box;
@@ -186,7 +212,6 @@ footer {
   right: 0;
   width: max-content;
   height: max-content;
-  display: block;
   background-color: #000;
 }
 
@@ -204,14 +229,6 @@ footer {
 }
 
 @media (max-width: 666px) {
-  .menu {
-    visibility: visible;
-  }
-
-  nav {
-    display: none;
-  }
-
   .avatar {
     margin-top: 2rem;
   }
